@@ -1,0 +1,51 @@
+{
+  "name": "Dmitry.Cherkasov.V1",
+  "version": "1.0.0",
+  "description": "Some part of intranet system",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& nodemon server",
+    "prod": "NODE_ENV=production node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mrDzurb/SomeReactReduxProject.git"
+  },
+  "author": "Dmitry Cherkasov",
+  "license": "BSD-2-Clause",
+  "_moduleAliases": {
+    "@root": ".",
+    "@server": "./server",
+    "@public": "./server/public",
+    "@apis": "./server/app/apis",
+    "@services": "./server/app/services",
+    "@middlewares": "./server/app/middlewares",
+    "@models": "./server/app/models",
+    "@routes": "./server/app/routes",
+    "@app": "./server/config/app.js",
+    "@config": "./server/config/index.js"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "env": "0.0.2",
+    "nodemon": "^1.12.5",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consign": "^0.1.6",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.2",
+    "express-mongo-db": "^2.0.3",
+    "express-session": "^1.15.6",
+    "module-alias": "^2.0.2",
+    "moment": "^2.*",
+    "mongodb": "^2.2.*",
+    "mongoose": "^4.13.3",
+    "morgan": "^1.9.0",
+    "node-schedule": "^1.2.5",
+    "nodemailer": "^4.4.1"
+  }
+}
